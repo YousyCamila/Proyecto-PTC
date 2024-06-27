@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D843F53-C376-10A8-99B6-D5AA011A830A" name="Auditoria">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>DA90D9FC-170F-B880-F7F6-CDDACAEE5AE1</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Auditoria" id="D250DB6F-AABD-48BE-C3FB-235CEC0F6C9C">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>6F4CECBE-BA02-04C9-DD72-85954C5DC483</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Actividad" id="BBFD6FDF-9C35-C821-E121-6F1FB92C37C3">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>567DAC5D-98AE-6BCC-64BC-112F259D7232</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descrip_Actividad" id="00060833-A462-28AC-5514-48F3BD58CE53">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>57C1E970-A94B-3784-A17A-04B4CC6A9E0F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="7C8638BB-F77D-EBD0-A579-368D9A3A96CA">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>5305D8A9-333D-0098-3D8D-64755222B0E8</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora_Activ" id="7E417C03-09D8-15EC-5520-B83C74EFE0F7">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>E10277D9-73B5-3308-DE69-F192A2A4BF07</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Detalles_Adicionales" id="EB4CA88D-7EF0-778D-FAB2-CF01E33B655D">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>06F86191-D866-3C2F-A621-4BF662AAE573</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256 CHAR</dataTypeSize>
+<ownDataTypeParameters>256 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_DNI" id="7F35DF44-6046-98A1-7FC7-F6E913EEB656">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>AD4082DE-DD26-0C93-5148-3D91217E07F5</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9A89FF9-E87D-D2EF-AC19-4B59B3B4E2AD" referredColumn="64E235B0-3BFC-F3A7-D12C-35F42120DBE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="697C8A4F-FCAD-D60D-B859-799ECD6A7A79" name="Auditoria_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>D326ECE6-B3DE-304D-43C7-370070DD970F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D250DB6F-AABD-48BE-C3FB-235CEC0F6C9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26DAD865-9940-AB35-6DB8-BE0A84DB1917" name="Auditoria__IDX">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5BB83589-BE0B-8049-B8D0-FFE47E47C21D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7F35DF44-6046-98A1-7FC7-F6E913EEB656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC237B3D-1DC1-91E3-888C-5316E7D02013" name="Auditoria_USUARIO_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>5BB83589-BE0B-8049-B8D0-FFE47E47C21D</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F35DF44-6046-98A1-7FC7-F6E913EEB656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

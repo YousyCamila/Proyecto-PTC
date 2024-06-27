@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA90D9FC-170F-B880-F7F6-CDDACAEE5AE1" name="Auditoria">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:02 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Auditoria" id="6F4CECBE-BA02-04C9-DD72-85954C5DC483">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:13 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Actividad" id="567DAC5D-98AE-6BCC-64BC-112F259D7232">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:14 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descrip_Actividad" id="57C1E970-A94B-3784-A17A-04B4CC6A9E0F">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:14 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="5305D8A9-333D-0098-3D8D-64755222B0E8">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:14 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hora_Activ" id="E10277D9-73B5-3308-DE69-F192A2A4BF07">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:14 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Detalles_Adicionales" id="06F86191-D866-3C2F-A621-4BF662AAE573">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:15 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256 CHAR</dataTypeSize>
+<ownDataTypeParameters>256 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="AD4082DE-DD26-0C93-5148-3D91217E07F5">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:11:13 UTC</createdTime>
+<generatorID>5BB83589-BE0B-8049-B8D0-FFE47E47C21D</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>9A153E0C-61D9-77C3-A446-8C5DDD62CB9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="BDDAF2C0-7087-AB3F-48A8-B54DE98AC3C2">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:39:23 UTC</createdTime>
+<generatorID>5BB83589-BE0B-8049-B8D0-FFE47E47C21D</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>8A671A70-6F2F-1DDB-586E-23869A212380</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>258 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D326ECE6-B3DE-304D-43C7-370070DD970F" name="Auditoria PK">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:52:44 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F4CECBE-BA02-04C9-DD72-85954C5DC483</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

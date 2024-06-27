@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E18D1853-820E-B1C1-3835-2CD2894BD71E" name="Registro_Mantenimineto">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>0D3CF012-BE74-E316-76F1-CCDB96A9054E</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Mantenimiento" id="8EE85DA2-EEA2-96E1-1210-765980427FE7">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>D46F5679-F798-9E27-5EB0-A05B74CC659E</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="C374F7F1-281F-6C45-5463-C3D853E1418F">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>9996489F-D00C-D515-CE7E-80A017F217C2</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Inicio" id="78B11A72-6B08-7AB1-86F1-FCD6232F510B">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>DAF3605C-185A-4458-17EA-724982CFBAF8</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Final" id="807255AE-FE1E-6A91-2A13-218F76180032">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>D9499B9E-31D1-E624-4096-8C95086D989F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="4184B8EB-3F3B-77A0-C6E7-2B095ABFAAF2">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>1842BF3E-BC29-E503-771C-080B94985D26</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADMINISTRADOR_DNI" id="E6D56487-C530-DF89-CBC8-8BEC9244A456">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>C6033343-791D-C044-CC40-C6ED5BA73D6C</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61D5239E-B55A-C934-4704-86CB644C41AE" referredColumn="B8FF6EA4-F3E6-F8D6-896F-F7A410A08BDB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDA36AEE-3D43-B792-7525-CEDCFA8A5D85" name="Registro_Mantenimineto_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>085FF33F-A684-327B-533E-B9F0A20553E4</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EE85DA2-EEA2-96E1-1210-765980427FE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C853DB2-9230-85A0-BDC9-2E94C6630ABE" name="Registro_Mantenimineto__IDX">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6967CFAA-7D56-2AF4-445F-67AFBB526EB8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E6D56487-C530-DF89-CBC8-8BEC9244A456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A49E780-3D92-3EBA-28C2-2BCC271DB774" name="Registro_Mantenimineto_ADMINISTRADOR_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>6967CFAA-7D56-2AF4-445F-67AFBB526EB8</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6D56487-C530-DF89-CBC8-8BEC9244A456"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

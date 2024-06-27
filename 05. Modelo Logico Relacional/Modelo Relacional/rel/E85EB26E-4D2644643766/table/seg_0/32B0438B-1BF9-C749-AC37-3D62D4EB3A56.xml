@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32B0438B-1BF9-C749-AC37-3D62D4EB3A56" name="CLIENTE">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>BB4E92DD-2550-5B5B-2122-74F1D8028C6F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DNI" id="98F63594-B3C3-9004-8E06-7DD50BE4C2BC">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>A5247D5E-8A81-25F3-2E5A-20DCBB0C6AC5</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A6F7D2E-8126-1632-C4B7-194E183FF3D1" referredColumn="C5F945B8-C390-6632-8144-5879CAE9F26B"/>
+</associations>
+</Column>
+<Column name="Direccion" id="A5F847E9-1A06-3BC1-3BC6-EE1B49625337">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>4CAD89F6-0D79-3878-903A-BD9EAB2A074C</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Formulario_ID_Formulario" id="14C8AA46-338C-E6F6-81F7-E033C009B6F1">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>77083CBF-D548-4E9E-33CE-0F516A7C5013</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E07DA08-7D3F-011C-C6CA-1041B2A2309F" referredColumn="4C1C1DEE-3BB3-983D-926B-215373544949"/>
+</associations>
+</Column>
+<Column name="Contrato_ID_Contrato" id="F374908F-CD18-1A0E-1A23-1218454CE6F8">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>BD2A3218-DDC7-5D5E-3BDD-4D0ECA533661</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55793ED0-FEA3-6B86-BE38-CF7ED6066D50" referredColumn="9F626D49-5B5D-7774-149B-DF1BB877C9D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2EADD5D-C919-3FBE-3A0E-C3751175739D" name="CLIENTE_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>933DADA0-E31E-0747-4C7F-30853AA2BE3F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F63594-B3C3-9004-8E06-7DD50BE4C2BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C415CF9C-F2FD-9B12-5F3F-3C34AAC6FBA1" name="CLIENTE__IDX">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF10EFF8-DFEE-65CF-746F-A11974CD4FD5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F374908F-CD18-1A0E-1A23-1218454CE6F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5B8654E-BD47-47BB-5F84-B9D52681AE7B" name="CLIENTE__IDXv1">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>91C39749-FFB4-90E4-196A-B72BB66F01B9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="14C8AA46-338C-E6F6-81F7-E033C009B6F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE0CFC64-80B0-5809-03DB-AFF24E82467E" name="CLIENTE_PERSONA_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>1D4091C4-2FDE-546F-F455-57583B8975D9</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F63594-B3C3-9004-8E06-7DD50BE4C2BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7980488A-6924-1637-50BA-35F5EBE9DC02" name="CLIENTE_Contrato_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>CF10EFF8-DFEE-65CF-746F-A11974CD4FD5</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F374908F-CD18-1A0E-1A23-1218454CE6F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5B7A4D4-6A98-6CF6-2723-BA0F973D7F10" name="CLIENTE_Formulario_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>91C39749-FFB4-90E4-196A-B72BB66F01B9</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14C8AA46-338C-E6F6-81F7-E033C009B6F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

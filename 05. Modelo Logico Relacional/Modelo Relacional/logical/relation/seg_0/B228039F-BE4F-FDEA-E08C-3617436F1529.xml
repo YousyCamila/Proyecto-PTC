@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Investigar" directorySegmentName="seg_0" id="B228039F-BE4F-FDEA-E08C-3617436F1529">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:37:04 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>90C2926B-42ED-AB5D-2D03-B7FB323C13F9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>33D220EC-6DC2-ADE3-EFA7-39B562E94118</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

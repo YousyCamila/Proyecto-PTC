@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A381860-7928-FA19-D71E-55DB8C618824" name="Evidencia">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>717926FA-CB46-6CDC-BE31-B361CB825EC0</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Evidencia" id="CF05CBCC-AC9B-6BE9-41B7-90EBFFE2EE78">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>A9DF89D3-3450-839A-7C82-94D40B5C8909</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_Evidencia" id="419B04C7-7B01-9A7A-9013-F5FCDA8479E4">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>959001A2-E9E4-28EF-B114-15E7A0091EA1</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="A474BA54-E165-42F9-0221-419852A45A9B">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>430BC016-5AD3-EC43-8939-61D925E25183</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Historial_de_casos_ID_historial" id="5E3B907F-C91F-0B19-487E-4666779C8893">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>F39A7400-13E6-CCAC-B238-458082CF04BB</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F284DE59-3AF8-50BA-229B-0B0730787BB0" referredColumn="C79B5E2D-11BB-2FD2-6544-891E1BA29D5A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BB85D49-A01F-6D45-8BD8-79FDD3C5B03D" name="Evidencia_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>029CFF6B-3B2B-E0BC-4564-C474C140C405</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF05CBCC-AC9B-6BE9-41B7-90EBFFE2EE78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4DF0E6E-346C-CD39-9184-21BBAAC6F33B" name="Evidencia_Historial_de_casos_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>1944EDBD-9969-9AB6-657B-032CD4CA1D3A</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E3B907F-C91F-0B19-487E-4666779C8893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

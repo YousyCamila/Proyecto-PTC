@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="15AFD4A7-41C8-B813-B04D-8C5976BEB2BC" name="Factura">
+<createdBy>SENA</createdBy>
+<createdTime>2024-05-09 21:58:19 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Factura" id="653C4F4C-7335-CC59-365D-C362FC9E1EEA">
+<createdBy>SENA</createdBy>
+<createdTime>2024-05-09 21:58:53 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Emision" id="4F4DF2C6-60D8-140E-3D70-8702E078E96B">
+<createdBy>SENA</createdBy>
+<createdTime>2024-05-09 21:58:54 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256 CHAR</dataTypeSize>
+<ownDataTypeParameters>256 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Pago" id="B04479D2-D8E4-C051-6237-5851161C5972">
+<createdBy>SENA</createdBy>
+<createdTime>2024-05-09 21:58:54 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256 CHAR</dataTypeSize>
+<ownDataTypeParameters>256 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion_Serv" id="AFD511CA-C90D-F0BB-4102-CB5A08854C2F">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:00:47 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Total_Pagar" id="1DF0C399-076F-9656-DE0B-D75FB62E03A5">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:00:47 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="A1BC246F-0199-89EE-D3FF-C04F54AF7805">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 18:11:56 UTC</createdTime>
+<generatorID>2E96DD7F-363B-AFCE-CCCD-069D3B6BD12E</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>69B64051-9A70-C9AD-6A95-9DBB363BB554</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="372A80DC-E60D-05AF-0AA2-D2EC411631B1" name="Factura PK">
+<createdBy>SENA</createdBy>
+<createdTime>2024-05-09 22:01:12 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>653C4F4C-7335-CC59-365D-C362FC9E1EEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

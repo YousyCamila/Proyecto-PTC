@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Gestionar" directorySegmentName="seg_0" id="6967CFAA-7D56-2AF4-445F-67AFBB526EB8">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 15:55:35 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<sourcePk>933DADA0-E31E-0747-4C7F-30853AA2BE3F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E364A94D-C086-52EE-DEF8-E1B4E1D349A7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0D3CF012-BE74-E316-76F1-CCDB96A9054E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

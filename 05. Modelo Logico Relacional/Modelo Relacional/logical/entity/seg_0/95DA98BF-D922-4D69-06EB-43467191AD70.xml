@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95DA98BF-D922-4D69-06EB-43467191AD70" name="USUARIO">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:18:34 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Username" id="28B1F4FB-F1F3-0F05-2B8F-F62FB9653946">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:18:43 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="0108A18C-A520-48A0-3B1B-B9A19DB32C40">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:19:32 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="4CBAF959-4718-7387-DE3F-A817B7F8EFBD">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:19:52 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="CC3D7084-2105-1D65-C798-06B9B43DF388">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:20:15 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>64 CHAR</dataTypeSize>
+<ownDataTypeParameters>64 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="9A153E0C-61D9-77C3-A446-8C5DDD62CB9C">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:21:38 UTC</createdTime>
+<generatorID>FBC8CEDC-6A40-4858-97FA-ADF010840C75</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>A5247D5E-8A81-25F3-2E5A-20DCBB0C6AC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="8A671A70-6F2F-1DDB-586E-23869A212380">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:39:04 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>258 CHAR</dataTypeSize>
+<ownDataTypeParameters>258 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7F4283E-51BD-966A-56B0-F9F2D371D8D9" name="USUARIO PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:11:08 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9A153E0C-61D9-77C3-A446-8C5DDD62CB9C</attributeRef>
+<attributeRef>8A671A70-6F2F-1DDB-586E-23869A212380</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

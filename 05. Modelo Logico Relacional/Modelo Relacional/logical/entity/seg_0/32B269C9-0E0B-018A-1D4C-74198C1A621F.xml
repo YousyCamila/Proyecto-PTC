@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32B269C9-0E0B-018A-1D4C-74198C1A621F" name="Contrato">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:34:35 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Contrato" id="0761070F-007E-27F1-EFBA-86E5DDA82288">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:42 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descrip_Servicio" id="407D99CD-27B3-E52A-9A5B-A66BFCBE65D4">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:42 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Inicia" id="A78078AB-E5E5-E0BD-2FE8-B59C3BAC77F7">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:42 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Cierre" id="F6F58781-11D4-8197-9B51-2C8506AB3ED7">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:42 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clausulas" id="AC0B56C6-FA63-076C-037B-EA6354E14BEE">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:42 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tarifa" id="9F7E3B1C-7C60-FA1D-BE26-FE3FF1F7D71F">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:43 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="C59A9069-E655-E597-4FBA-F9AD0B40B50E">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:43:43 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="04159DE0-F916-1600-5707-B8FF4FCE03CE">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:50:10 UTC</createdTime>
+<generatorID>DE615438-00CD-902B-1EBA-4E4E064146BA</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>A5247D5E-8A81-25F3-2E5A-20DCBB0C6AC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="52E36DE8-0EA6-B86F-6ACB-B624701EBDD9" name="Contrato PK">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:44:54 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0761070F-007E-27F1-EFBA-86E5DDA82288</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

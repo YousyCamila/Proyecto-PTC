@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE496299-9198-4305-347A-45733274529F" containerWithKeyObject="AECD1C1C-0BD2-08D7-5900-541C5E27FE10" localFKIndex="7D83C46E-639B-AA5E-EE32-63622804E93D" name="Tipo_Aportante_Tipo_Evidencia_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>B2057117-035B-A8C2-48F8-0B206ADC881F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<referredTableLongName>Tipo_Evidencia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A8077DFB-FC10-A91F-1FBA-9C90C665C2E0</referredTableID>
+<keyObject>BBA55A1B-CE37-4018-FEA1-7527BA80C45D</keyObject>
+<referredKeyID>BBA55A1B-CE37-4018-FEA1-7527BA80C45D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Tipo_Evidencia,Evidencia_ID_Evidencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

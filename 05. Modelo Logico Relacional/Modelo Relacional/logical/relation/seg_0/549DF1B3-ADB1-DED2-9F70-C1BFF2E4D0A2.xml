@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tener" directorySegmentName="seg_0" id="549DF1B3-ADB1-DED2-9F70-C1BFF2E4D0A2">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:30:02 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<sourcePk>933DADA0-E31E-0747-4C7F-30853AA2BE3F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BB4E92DD-2550-5B5B-2122-74F1D8028C6F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5A0B946B-B5AB-A59D-971E-F55D27928D1F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

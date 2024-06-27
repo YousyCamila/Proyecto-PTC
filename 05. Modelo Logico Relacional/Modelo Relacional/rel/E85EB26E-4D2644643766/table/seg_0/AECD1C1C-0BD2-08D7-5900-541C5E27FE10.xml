@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AECD1C1C-0BD2-08D7-5900-541C5E27FE10" name="Tipo_Aportante">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>0342B6CE-A739-B42C-09F8-DCBAB5227C08</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Tipo_Aportante" id="A44E338C-1250-B161-2A06-5D79364D00FB">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>97806539-A7D4-46CB-B72E-FDF3F4391B1E</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Detective" id="98D80879-3BA2-7307-0407-854533714BD1">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>9EE47071-F2DD-D0AB-176C-51EABD5CF223</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente" id="FFF82437-8308-A0C4-500C-F2455D677838">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>C9FFABA9-77A7-7187-7721-498B097AA66B</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Evidencia_ID_Tipo_Evidencia" id="F4A6FB8B-CD51-BD85-041B-030CCED9DF31">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>AA4A399E-1D68-A098-E3E1-3265BDAE0BD7</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE496299-9198-4305-347A-45733274529F" referredColumn="8D6C0F0E-5881-8694-A615-42665F0E48FD"/>
+</associations>
+</Column>
+<Column name="Tipo_Evidencia_Evidencia_ID_Evidencia" id="B12466D0-F1B3-F77B-8F98-0AE9737EE862">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>53F1A720-C329-2C9A-FB53-6F04CCA92951</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE496299-9198-4305-347A-45733274529F" referredColumn="B298EC50-2490-56AB-B396-267E44B0A96A"/>
+</associations>
+</Column>
+<Column name="reporte_ID_Reporte" id="660439D7-C9AA-49DE-D783-521C595832B4">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>C6DC6915-7C6E-CD91-9D34-418E8C61A6AF</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5588B1DC-866F-1DCF-DBFE-88683E1FA3C2" referredColumn="4E97F19D-330C-F1AA-43A9-3A701E0CC884"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="917A0011-520A-A173-7596-BC2ABD20A2CD" name="Tipo_Aportante_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>A4355E5B-B0C0-205F-4528-8AF71AB60C54</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A44E338C-1250-B161-2A06-5D79364D00FB"/>
+<colUsage columnID="F4A6FB8B-CD51-BD85-041B-030CCED9DF31"/>
+<colUsage columnID="B12466D0-F1B3-F77B-8F98-0AE9737EE862"/>
+<colUsage columnID="660439D7-C9AA-49DE-D783-521C595832B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D83C46E-639B-AA5E-EE32-63622804E93D" name="Tipo_Aportante_Tipo_Evidencia_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>B2057117-035B-A8C2-48F8-0B206ADC881F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4A6FB8B-CD51-BD85-041B-030CCED9DF31"/>
+<colUsage columnID="B12466D0-F1B3-F77B-8F98-0AE9737EE862"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC125712-FADA-927F-C392-D9A7CF0A0340" name="Tipo_Aportante_reporte_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>EF48D3BE-F71E-A99C-C5FD-F7009AD91F38</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="660439D7-C9AA-49DE-D783-521C595832B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

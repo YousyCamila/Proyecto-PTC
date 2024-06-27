@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="309F23F2-31B1-1484-1B3D-EBCC07B42569" name="Historial de casos">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:18:10 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_historial" id="3C94AD5E-B0D1-9A59-C04F-1DCED0F56980">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:18:29 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="525950C5-0476-C4D2-A7AF-2BEE8E0C91FC">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:19:01 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>258 CHAR</dataTypeSize>
+<ownDataTypeParameters>258 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha Incio " id="2C58E684-C4E5-DE55-1DF9-F5AEB915CBEF">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:19:40 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_finalizacion" id="88620E76-4764-28EC-3573-70814166CA5F">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:19:58 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="3F9C4AAE-1E12-6284-F8C3-CB5DEC353044">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:36:40 UTC</createdTime>
+<generatorID>CF2BE2B0-4B2E-4F77-A7AE-DC4A0777F6F6</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>69B64051-9A70-C9AD-6A95-9DBB363BB554</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="17036549-3263-CEFC-90B4-0A5D46D6A285" name="Historial de casos PK">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:18:53 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C94AD5E-B0D1-9A59-C04F-1DCED0F56980</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

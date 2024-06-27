@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B873AFC5-30FF-DA72-19D7-007BF3B2F2D0" containerWithKeyObject="A37ACA73-14B1-990D-6E2D-C04AC5C51D4F" localFKIndex="F1FFA5BA-987D-E8C2-0B73-2B43AF7BFA9D" name="Investigar_CASOS_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>B228039F-BE4F-FDEA-E08C-3617436F1529</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<referredTableLongName>CASOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>72B40214-958A-C519-8F0F-38E8CC1E1946</referredTableID>
+<keyObject>8A2BE268-226F-A0B1-5F18-EA61C9E8A29B</keyObject>
+<referredKeyID>8A2BE268-226F-A0B1-5F18-EA61C9E8A29B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

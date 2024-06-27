@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A37ACA73-14B1-990D-6E2D-C04AC5C51D4F" name="Investigar">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Detective_DNI" id="FF571378-9A16-2187-8764-3A1708A5C5EA">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="11A19651-36CD-A65E-66BC-DD01BA1B0693" referredColumn="C5382A63-F6CE-6897-BBEA-888930431E5E"/>
+</associations>
+</Column>
+<Column name="CASOS_ID" id="5ED78857-FC50-FDAA-F0CC-3F75ADFBBB68">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B873AFC5-30FF-DA72-19D7-007BF3B2F2D0" referredColumn="CCC40992-186E-53E7-21D9-DA490BED6C9F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EDB0553-9119-057E-F6DB-453A7D8B5630" name="Investigar_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF571378-9A16-2187-8764-3A1708A5C5EA"/>
+<colUsage columnID="5ED78857-FC50-FDAA-F0CC-3F75ADFBBB68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A39D9BA6-BE5A-CD76-15FC-1B1DC89DEB46" name="Investigar_Detective_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>B228039F-BE4F-FDEA-E08C-3617436F1529</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF571378-9A16-2187-8764-3A1708A5C5EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1FFA5BA-987D-E8C2-0B73-2B43AF7BFA9D" name="Investigar_CASOS_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>B228039F-BE4F-FDEA-E08C-3617436F1529</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ED78857-FC50-FDAA-F0CC-3F75ADFBBB68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

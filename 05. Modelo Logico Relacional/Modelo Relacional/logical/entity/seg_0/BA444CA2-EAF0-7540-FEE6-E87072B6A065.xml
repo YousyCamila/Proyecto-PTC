@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA444CA2-EAF0-7540-FEE6-E87072B6A065" name="Tipo_Evidencia">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:22:48 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Tipo_Evidencia" id="9FD45A71-D19C-8337-355B-66031FFEFC1C">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:23:00 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Detective" id="0C3FF58F-D1AC-4A34-A1A3-75055759F1EF">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:23:37 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente" id="FCCDE0A8-E819-4A92-4D8F-5A8868104DA0">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:26:17 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Evidencia" id="849FCE17-8F23-50AE-3322-D98E0DFCBB61">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:38:38 UTC</createdTime>
+<generatorID>CBCD4692-4AB0-85E4-BDE9-03B71A216F71</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>A9DF89D3-3450-839A-7C82-94D40B5C8909</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9AA8C953-9135-3217-325E-6FCD39937C90" name="Tipo_Evidencia PK">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-06-17 02:23:35 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9FD45A71-D19C-8337-355B-66031FFEFC1C</attributeRef>
+<attributeRef>849FCE17-8F23-50AE-3322-D98E0DFCBB61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

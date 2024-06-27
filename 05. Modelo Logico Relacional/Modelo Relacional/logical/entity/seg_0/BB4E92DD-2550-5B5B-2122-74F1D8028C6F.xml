@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB4E92DD-2550-5B5B-2122-74F1D8028C6F" name="CLIENTE">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:15:05 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>5EFC5EFD-33D3-F153-FDFD-647D8DEB1E0C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Direccion" id="4CAD89F6-0D79-3878-903A-BD9EAB2A074C">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-05-09 20:15:52 UTC</createdTime>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Formulario" id="77083CBF-D548-4E9E-33CE-0F516A7C5013">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:26:32 UTC</createdTime>
+<generatorID>91C39749-FFB4-90E4-196A-B72BB66F01B9</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>AE07BCB4-3E1B-2711-7709-574D57DD4A9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Contrato" id="BD2A3218-DDC7-5D5E-3BDD-4D0ECA533661">
+<createdBy>ludwi</createdBy>
+<createdTime>2024-05-13 16:50:49 UTC</createdTime>
+<generatorID>CF10EFF8-DFEE-65CF-746F-A11974CD4FD5</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="E85EB26E-76CD-C495-62C4-4D2644643766" value="true"/>
+</engineerTo>
+<referedAttribute>0761070F-007E-27F1-EFBA-86E5DDA82288</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>128 CHAR</dataTypeSize>
+<ownDataTypeParameters>128 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

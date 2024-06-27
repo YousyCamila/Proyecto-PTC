@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="782682D2-E5B7-F9E7-FE66-672B11C5BA71" name="ADMINISTRADOR">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>E364A94D-C086-52EE-DEF8-E1B4E1D349A7</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DNI" id="B8FF6EA4-F3E6-F8D6-896F-F7A410A08BDB">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>A5247D5E-8A81-25F3-2E5A-20DCBB0C6AC5</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBAE0014-068A-51F3-8071-B414A00751CE" referredColumn="C5F945B8-C390-6632-8144-5879CAE9F26B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66275E77-382C-52A5-C4FC-43A6EE0646D5" name="ADMINISTRADOR_PK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>933DADA0-E31E-0747-4C7F-30853AA2BE3F</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8FF6EA4-F3E6-F8D6-896F-F7A410A08BDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96EB35E3-4CF7-2689-6740-4C3E3E8BB092" name="ADMINISTRADOR_PERSONA_FK">
+<createdBy>Aprendiz</createdBy>
+<createdTime>2024-06-24 22:21:22 UTC</createdTime>
+<generatorID>D3FDC2AE-5FD6-DE0D-C73F-9C6FFA534B83</generatorID>
+<ownerDesignName>Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8FF6EA4-F3E6-F8D6-896F-F7A410A08BDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
