@@ -36,6 +36,7 @@ const Login = () => {
       if (response.ok) {
         // Decodifica el token para obtener email, id y role
         const decodedToken = jwt_decode(data.accessToken);
+        console.log("Email en localStorage:", email); // Agrega esta línea para depurar
 
         // Guarda los datos en localStorage
         localStorage.setItem("accessToken", data.accessToken);

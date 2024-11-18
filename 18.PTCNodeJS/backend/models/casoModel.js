@@ -31,6 +31,10 @@ const casoSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'RegistroCaso',
   }],
+  contratos: [{ // Nueva referencia para los contratos
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Contrato',
+  }],
   activo: { type: Boolean, default: true },
 }, { timestamps: true });
 

@@ -12,17 +12,11 @@ import {
   Paper,
   Button,
   Snackbar,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  TextField,
   IconButton,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import AddIcon from '@mui/icons-material/Add';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CasoDetailsMenu from './CasoDetailsMenu';
 
@@ -30,14 +24,13 @@ const ClienteMenu = () => {
   const [casos, setCasos] = useState([]);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
-  const [openDialog, setOpenDialog] = useState(false);
-  const [clienteId, setClienteId] = useState('');
   const [selectedCaso, setSelectedCaso] = useState(null); // Caso seleccionado para ver detalles
   const navigate = useNavigate();
 
   const email = localStorage.getItem('email'); // Obtiene el email del cliente desde el localStorage
   const API_URL = 'http://localhost:3000/api';
 
+  // Función para buscar casos por correo electrónico
   const fetchCasosByEmail = async (emailCliente) => {
     try {
       const response = await fetch(`${API_URL}/caso/cliente/email/${emailCliente}`, {
@@ -49,23 +42,13 @@ const ClienteMenu = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setCasos(data);
+        setCasos(data.casos || []); // Asegurarse de usar solo los casos
       } else {
         throw new Error(data.message || 'Error al buscar los casos');
       }
     } catch (error) {
-      console.error("Error fetching casos:", error);
+      console.error('Error fetching casos by email:', error);
       setSnackbarMessage(`Error al buscar los casos: ${error.message}`);
-      setOpenSnackbar(true);
-    }
-  };
-
-  const handleBuscarCasoPorId = () => {
-    if (clienteId) {
-      fetchCasosByEmail(clienteId);
-      setOpenDialog(false);
-    } else {
-      setSnackbarMessage("Por favor ingresa un ID de cliente.");
       setOpenSnackbar(true);
     }
   };
@@ -83,31 +66,37 @@ const ClienteMenu = () => {
   };
 
   const handleViewDetails = (caso) => {
-    const evidenciasFormatted = caso.evidencias && caso.evidencias.length > 0 
-      ? caso.evidencias.map((evidencia, index) => `
-          <li>
-            <strong>Fecha:</strong> ${evidencia.fechaEvidencia}, 
-            <strong>Descripción:</strong> ${evidencia.descripcion}, 
-            <strong>Tipo:</strong> ${evidencia.tipoEvidencia}
-          </li>
-        `).join('')
-      : 'No hay evidencias asociadas.';
-  
+    const evidenciasFormatted =
+      caso.evidencias && caso.evidencias.length > 0
+        ? caso.evidencias
+            .map(
+              (evidencia, index) =>
+                `<li>
+                  <strong>Fecha:</strong> ${new Date(evidencia.fechaEvidencia).toLocaleDateString()},
+                  <strong>Descripción:</strong> ${evidencia.descripcion},
+                  <strong>Tipo:</strong> ${evidencia.tipoEvidencia}
+                </li>`
+            )
+            .join('')
+        : 'No hay evidencias asociadas.';
+
     Swal.fire({
-      title: `Detalles del Caso: ${caso.nombreCaso}`, 
+      title: `Detalles del Caso: ${caso.nombreCaso}`,
       html: `
         <div><strong>Nombre del Caso:</strong> ${caso.nombreCaso}</div>
         <div><strong>Estado:</strong> ${caso.activo ? 'Activo' : 'Inactivo'}</div>
         <div><strong>ID del Caso:</strong> ${caso._id}</div>
-        <div><strong>Detective Asignado:</strong> ${caso.idDetective ? caso.idDetective.nombre : 'No asignado'}</div>
+        <div><strong>Detective Asignado:</strong> ${caso.idDetective ? `${caso.idDetective.nombres} ${caso.idDetective.apellidos}` : 'No asignado'}</div>
         <div><strong>Evidencias:</strong><ul>${evidenciasFormatted}</ul></div>
-        <div><strong>Registro de Casos:</strong> ${caso.registroCasos && caso.registroCasos.length > 0 ? caso.registroCasos.join(', ') : 'No hay registros asociados.'}</div>
+        <div><strong>Registro de Casos:</strong> ${
+          caso.registroCasos && caso.registroCasos.length > 0 ? caso.registroCasos.join(', ') : 'No hay registros asociados.'
+        }</div>
       `,
       icon: 'info',
       confirmButtonText: 'Cerrar',
     });
   };
-  
+
   useEffect(() => {
     if (email) {
       fetchCasosByEmail(email); // Cargar los casos automáticamente si el email está definido
@@ -124,13 +113,13 @@ const ClienteMenu = () => {
           position: 'absolute',
           top: 16,
           left: 16,
-          color: '#ffffff', // Cambia el texto a color azul
-          backgroundColor: '#005f91', // Fondo en blanco
+          color: '#ffffff',
+          backgroundColor: '#005f91',
           '&:hover': {
-            backgroundColor: '#d9d9d9', // Cambia ligeramente el color al pasar el ratón
+            backgroundColor: '#d9d9d9',
           },
         }}
-        >
+      >
         Salir
       </Button>
 
@@ -139,22 +128,13 @@ const ClienteMenu = () => {
           Casos Asociados al Cliente
         </Typography>
 
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
-        <Button variant="outlined" color="primary" onClick={() => fetchCasosByEmail(email)}>
-            Cargar Casos Asociados
-          </Button>
-          <Button variant="outlined" color="primary" onClick={() => setOpenDialog(true)}>
-            Buscar Caso por ID de Cliente
-          </Button>
-        </Box>
-
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
               <TableRow>
                 <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}>Nombre del Caso</TableCell>
                 <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}>Estado</TableCell>
-                <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}>ID del Caso</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}>Detective</TableCell>
                 <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}>Acciones</TableCell>
               </TableRow>
             </TableHead>
@@ -164,7 +144,11 @@ const ClienteMenu = () => {
                   <TableRow key={caso._id}>
                     <TableCell>{caso.nombreCaso}</TableCell>
                     <TableCell>{caso.activo ? 'Activo' : 'Inactivo'}</TableCell>
-                    <TableCell>{caso._id}</TableCell>
+                    <TableCell>
+                      {caso.idDetective
+                        ? `${caso.idDetective.nombres} ${caso.idDetective.apellidos}`
+                        : 'No asignado'}
+                    </TableCell>
                     <TableCell>
                       <IconButton onClick={() => handleViewDetails(caso)}>
                         <VisibilityIcon color="primary" />
@@ -189,32 +173,7 @@ const ClienteMenu = () => {
 
       <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={() => setOpenSnackbar(false)} message={snackbarMessage} />
 
-      <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
-        <DialogTitle>Cargar casos mediante ID de Cliente</DialogTitle>
-        <DialogContent>
-          <TextField
-            autoFocus
-            margin="dense"
-            label="ID de Cliente"
-            type="text"
-            fullWidth
-            variant="outlined"
-            value={clienteId}
-            onChange={(e) => setClienteId(e.target.value)}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setOpenDialog(false)} color="secondary">Cancelar</Button>
-          <Button onClick={handleBuscarCasoPorId} color="primary">Buscar</Button>
-        </DialogActions>
-      </Dialog>
-
-      {selectedCaso && (
-        <CasoDetailsMenu
-          caso={selectedCaso}
-          onClose={handleCloseCasoDetails}
-        />
-      )}
+      {selectedCaso && <CasoDetailsMenu caso={selectedCaso} onClose={handleCloseCasoDetails} />}
     </Box>
   );
 };
