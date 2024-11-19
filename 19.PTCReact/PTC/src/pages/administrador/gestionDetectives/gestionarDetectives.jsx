@@ -21,41 +21,42 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 
-const GestionarDetectives = () => {
-  const [detectives, setDetectives] = useState([]);
+// Reutilizable para clientes y detectives
+const GestionarEntidades = ({ entidad, apiEndpoint, editarPath, detallesPath, crearPath }) => {
+  const [items, setItems] = useState([]);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
   const navigate = useNavigate();
 
-  // Fetch detectives from the API
-  const fetchDetectives = async () => {
+  // Fetch datos desde la API
+  const fetchEntidades = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/detectives"); // Cambiar a la ruta de detectives
+      const response = await fetch(apiEndpoint);
       const data = await response.json();
-      setDetectives(data);
+      setItems(data);
     } catch (error) {
-      console.error("Error fetching detectives:", error);
-      setSnackbarMessage('Error al cargar los detectives');
+      console.error(`Error al cargar ${entidad}:`, error);
+      setSnackbarMessage(`Error al cargar los ${entidad}`);
       setOpenSnackbar(true);
     }
   };
 
   useEffect(() => {
-    fetchDetectives();
+    fetchEntidades();
   }, []);
 
-  const handleEdit = (detectiveId) => {
-    navigate(`/editar-detective/${detectiveId}`);
+  const handleEdit = (itemId) => {
+    navigate(`${editarPath}/${itemId}`);
   };
 
-  const handleDetails = (detectiveId) => {
-    navigate(`/detalles-detective/${detectiveId}`);
+  const handleDetails = (itemId) => {
+    navigate(`${detallesPath}/${itemId}`);
   };
 
-  const handleDeactivate = async (detectiveId) => {
+  const handleDeactivate = async (itemId) => {
     const confirm = await Swal.fire({
-      title: '¿Estás seguro?',
-      text: "Cambiará el estado del detective a inactivo.",
+      title: `¿Estás seguro?`,
+      text: `Cambiará el estado del ${entidad.slice(0, -1)} a inactivo.`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#d33',
@@ -65,23 +66,25 @@ const GestionarDetectives = () => {
 
     if (confirm.isConfirmed) {
       try {
-        await fetch(`http://localhost:3000/api/detectives/${detectiveId}`, {
+        await fetch(`${apiEndpoint}/${itemId}`, {
           method: 'DELETE',
         });
-        setDetectives(prevDetectives => prevDetectives.map(detective => 
-          detective._id === detectiveId ? { ...detective, activo: false } : detective
-        ));
-        Swal.fire('Desactivado!', 'El detective ha sido desactivado.', 'success');
+        setItems((prevItems) =>
+          prevItems.map((item) =>
+            item._id === itemId ? { ...item, activo: false } : item
+          )
+        );
+        Swal.fire('Desactivado!', `El ${entidad.slice(0, -1)} ha sido desactivado.`, 'success');
       } catch (error) {
-        console.error("Error al desactivar detective:", error);
-        setSnackbarMessage('No se pudo desactivar el detective.');
+        console.error(`Error al desactivar ${entidad.slice(0, -1)}:`, error);
+        setSnackbarMessage(`No se pudo desactivar el ${entidad.slice(0, -1)}.`);
         setOpenSnackbar(true);
       }
     }
   };
 
   const handleCreate = () => {
-    navigate('/crear-detective');
+    navigate(crearPath);
   };
 
   const handleCloseSnackbar = () => {
@@ -89,7 +92,7 @@ const GestionarDetectives = () => {
   };
 
   const handleBack = () => {
-    navigate('/admin-menu'); // Navegar al menú administrativo
+    navigate('/admin-menu');
   };
 
   return (
@@ -104,8 +107,13 @@ const GestionarDetectives = () => {
       }}
     >
       <Container maxWidth="lg" sx={{ background: 'white', borderRadius: 2, padding: 4, boxShadow: 3 }}>
-        <Typography variant="h4" component="h1" gutterBottom sx={{ textAlign: 'center', color: '#0077b6' }}>
-          Gestionar Detectives
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          sx={{ textAlign: 'center', color: '#0077b6' }}
+        >
+          Gestionar {entidad}
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
           <Button
@@ -116,7 +124,7 @@ const GestionarDetectives = () => {
               '&:hover': { backgroundColor: '#005f91' },
             }}
           >
-            Crear Detective
+            Crear {entidad.slice(0, -1)}
           </Button>
           <Button
             variant="outlined"
@@ -134,31 +142,48 @@ const GestionarDetectives = () => {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}><strong>Nombre</strong></TableCell>
-                <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}><strong>Activo</strong></TableCell>
-                <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}><strong>Fecha de Nacimiento</strong></TableCell>
-                <TableCell align="right" sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}><strong>Acciones</strong></TableCell>
+                <TableCell
+                  sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}
+                >
+                  <strong>Nombre</strong>
+                </TableCell>
+                <TableCell
+                  sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}
+                >
+                  <strong>Activo</strong>
+                </TableCell>
+                <TableCell
+                  sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}
+                >
+                  <strong>Fecha de Nacimiento</strong>
+                </TableCell>
+                <TableCell
+                  align="right"
+                  sx={{ fontWeight: 'bold', backgroundColor: '#005f91', color: 'white' }}
+                >
+                  <strong>Acciones</strong>
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {detectives.map((detective) => (
-                <TableRow key={detective._id}>
-                  <TableCell>{detective.nombres} {detective.apellidos}</TableCell>
-                  <TableCell>{detective.activo ? 'Sí' : 'No'}</TableCell>
-                  <TableCell>{new Date(detective.fechaNacimiento).toLocaleDateString()}</TableCell>
+              {items.map((item) => (
+                <TableRow key={item._id}>
+                  <TableCell>{item.nombres} {item.apellidos}</TableCell>
+                  <TableCell>{item.activo ? 'Sí' : 'No'}</TableCell>
+                  <TableCell>{new Date(item.fechaNacimiento).toLocaleDateString()}</TableCell>
                   <TableCell align="right">
                     <Tooltip title="Ver Detalles" arrow>
-                      <IconButton onClick={() => handleDetails(detective._id)} color="primary">
+                      <IconButton onClick={() => handleDetails(item._id)} color="primary">
                         <VisibilityIcon />
                       </IconButton>
                     </Tooltip>
-                    <Tooltip title="Editar Detective" arrow>
-                      <IconButton onClick={() => handleEdit(detective._id)} color="primary">
+                    <Tooltip title="Editar" arrow>
+                      <IconButton onClick={() => handleEdit(item._id)} color="primary">
                         <EditIcon />
                       </IconButton>
                     </Tooltip>
-                    <Tooltip title="Desactivar Detective" arrow>
-                      <IconButton onClick={() => handleDeactivate(detective._id)} color="error">
+                    <Tooltip title="Desactivar" arrow>
+                      <IconButton onClick={() => handleDeactivate(item._id)} color="error">
                         <DeleteIcon />
                       </IconButton>
                     </Tooltip>
@@ -179,5 +204,16 @@ const GestionarDetectives = () => {
     </Box>
   );
 };
+
+// Ejemplo de uso para Detectives
+const GestionarDetectives = () => (
+  <GestionarEntidades
+    entidad="Detectives"
+    apiEndpoint="http://localhost:3000/api/detectives"
+    editarPath="/editar-detective"
+    detallesPath="/detalles-detective"
+    crearPath="/crear-detective"
+  />
+);
 
 export default GestionarDetectives;
