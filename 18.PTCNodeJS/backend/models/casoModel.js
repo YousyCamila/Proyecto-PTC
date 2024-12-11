@@ -5,13 +5,13 @@ const casoSchema = new mongoose.Schema({
     type: String,
     required: true,
     enum: [ // Lista de nombres de casos permitidos
-      'cadenaCustodia',
-      'investigacionExtorsion',
-      'estudiosSeguridad',
-      'investigacionInfidelidades',
-      'investigacionRobosEmpresariales',
-      'antecedentes',
-      'recuperacionVehiculos'
+      'Cadena de custodia',
+      'Investigación de extorsión',
+      'Estudios de seguridad',
+      'Investigación de infidelidades',
+      'Investigación de robos empresariales',
+      'Antecedentes',
+      'Recuperación de vehículos'
     ],
   },
   idCliente: {
@@ -30,6 +30,10 @@ const casoSchema = new mongoose.Schema({
   registroCasos: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'RegistroCaso',
+  }],
+  contratos: [{ // Nueva referencia para los contratos
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Contrato',
   }],
   activo: { type: Boolean, default: true },
 }, { timestamps: true });
